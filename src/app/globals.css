@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/*:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}*/
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+
+body {
+  background: var(--background);  
+ 
+}
+/*
+ */
+
+.sancho-poeta-bg {
+  background-image: url('/sanchopoetafondo.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh; /* Asegura que ocupe toda la pantalla */
+  padding: 30px;
+}
+
+
+
+
+
+
