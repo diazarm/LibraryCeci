@@ -58,13 +58,13 @@ const PrevArrow = ({ onClick }) => (
       <PopoverContent className="w-[400px] h-auto py-6 bg-teal-600 rounded-lg">
         <div className="flex flex-col items-center">
         <img
-        src="/post.jpg"
+        src="/reclus.png"
         alt="Popover Image"
         className="w-full  h-auto  object-cover rounded-lg py-1 " //max-h-[300px] regula el ancho del afiche
         onError={() => console.error("No se pudo cargar la imagen")}
       />
-          <div className="text-small font-bold mt-4">Popover Content</div>
-          <div className="text-tiny">This is the popover content</div>
+          <div className="text-xl font-bold mt-4">¡¡PRÓXIMAMENTE!!</div>
+          <div className="text-tiny"></div>
           <button
                 className="mt-4 px-6 py-1 bg-teal-300 text-teal-800 font-bold rounded-lg"
                 onClick={() => setIsPopoverOpen(false)} // Cerrar el popover

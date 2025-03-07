@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 /*import Image from "next/image";*/
-import isScrolled from "@nextui-org/react";
+
 import {
   Navbar,
   NavbarBrand,
