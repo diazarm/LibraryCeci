@@ -71,7 +71,7 @@ const handleNavigation = (path) => {
       <NavbarContent>
         <NavbarMenuToggle
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
-          className="sm:hidden"// Lo oculta en pantallas grandes
+          className="sm:hidden text-zinc-200"// Lo oculta en pantallas grandes
        
           />
   {/* Logo en pantallas grandes */}

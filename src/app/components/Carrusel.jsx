@@ -10,7 +10,7 @@ import {Popover, PopoverContent, Button} from "@heroui/react";
 const PrevArrow = ({ onClick }) => (
     <button 
       onClick={onClick} 
-      className="absolute left-0 top-1/2 transform -translate-y-1/2 z-10 bg-gray-800 text-white p-2 rounded-full hover:bg-gray-600"
+      className="absolute left-0 top-1/2 transform -translate-y-1/2 z-10 bg-teal-600 text-white p-2 rounded-full hover:bg-gray-600"
       style={{ left: "10px" }} // Ajustar la posición
     >
       <ChevronLeft size={24} color="white"  />
@@ -21,7 +21,7 @@ const PrevArrow = ({ onClick }) => (
   const NextArrow = ({ onClick }) => (
     <button 
       onClick={onClick} 
-      className="absolute right-0 top-1/2 transform -translate-y-1/2 z-10 bg-gray-800 text-white p-2 rounded-full hover:bg-gray-600"
+      className="absolute right-0 top-1/2 transform -translate-y-1/2 z-10 bg-teal-600 text-white p-2 rounded-full hover:bg-gray-600"
       style={{ right: "10px" }} // Ajustar la posición
     >
       <ChevronRight size={24} color="white" />

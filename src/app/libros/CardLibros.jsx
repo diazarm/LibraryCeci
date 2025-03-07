@@ -12,7 +12,7 @@ import {
     ModalHeader,
     ModalBody,
     ModalFooter, 
-    useDisclosure
+    useDisclosure    
   } from "@heroui/modal";
  
 
@@ -30,7 +30,8 @@ const CardLibros = (props) => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className='flex flex-col justify-center items-center  relative group cursor-pointer'>
+            className='flex flex-col justify-center items-center  relative group cursor-pointer'
+            style={{ pointerEvents: 'auto' }}>
 
 {/* Contenedor de la imagen */}
         <div className="relative w-full max-w-[200px] aspect-[2/3] overflow-hidden  rounded group-hover:shadow-lg">
@@ -61,7 +62,7 @@ const CardLibros = (props) => {
       
 
 {/* Modal */}
-    <Button onPress={onOpen} className="mt-4 text-base" style={{ fontFamily: "Averia Sans Libre" }}  >reseña</Button>
+    <Button onClick={() => onOpen()} className="mt-4 text-base" style={{ fontFamily: "Averia Sans Libre" }}  >reseña</Button>
         <Modal 
         backdrop="opaque"        
         classNames={{
@@ -75,12 +76,12 @@ const CardLibros = (props) => {
             <ModalContent className=' bg-blue-200 p-7 overflow-y-auto max-h-[90vh]'>
                 {(onClose) => (
                     <div className="flex flex-col gap-1">
-                        <ModalHeader className="flex flex-col gap-1 text-xl text-center text-blue-900"
+                        <ModalHeader className="flex flex-col gap-1 text-2xl font-bold text-center text-blue-900"
                                      style={{ fontFamily: "Averia Sans Libre" }} >{props.title}
                         <p className="text-sm">{props.edit}</p>
                         </ModalHeader>
                         
-                        <ModalBody className='text-center max-h-[60vh] text-blue-900' style={{ fontFamily: "Averia Sans Libre" }} >                        
+                        <ModalBody className='text-center max-h-[60vh] font-bold text-blue-900' style={{ fontFamily: "Averia Sans Libre" }} >                        
                           <p>{props.description}</p>
                         </ModalBody>
                         

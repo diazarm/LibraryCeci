@@ -1,8 +1,8 @@
 'use client'
 import { useState } from "react";
 import { Button } from "@nextui-org/react";
-import { Textarea } from "@heroui/react";
-import {Input} from "@heroui/input";
+import { Input, Textarea } from "@heroui/react";
+
 
 
 const FormContact = () => {
@@ -46,7 +46,7 @@ const FormContact = () => {
     
     <div className="bg-zinc-800 rounded-2xl text-zinc-200 w-full sm:w-3/4 xl:w-3/4" >     
 
-      <form className='flex flex-col justify-center items-center rounded-xl gap-5 py-20 bg-transparent'
+      <form className='flex flex-col justify-center items-center rounded-xl gap-5 py-20 '
             onSubmit={handleSubmit}>
         <h1 className="text-2xl text-zinc-200">Escribeme</h1>
         <Input
@@ -93,3 +93,8 @@ const FormContact = () => {
 }
 
 export default FormContact;
+
+/*EMAIL_USER=escritor@sanchorecabarren.cl
+EMAIL_PASS=sancho.alexei
+SMTP_HOST=smtp.tu-proveedor.com
+SMTP_PORT=465*/
