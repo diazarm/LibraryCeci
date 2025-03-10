@@ -1,11 +1,11 @@
 
 import "./globals.css";
-import Appbar from "./components/Appbar";
+import NuevoAppbar from "./components/NuevoAppbar";
 import Footer from "./components/Footer"
 //import CardAbout from "./components/CardAbout"
 import { Averia_Sans_Libre, Noto_Sans } from 'next/font/google';
 import Provider from "./Provider";
-import ScrollToTop from "./components/ScrollToTop";
+
 /*import FormContact from "./contact/FormContact";*/
 
 
@@ -46,10 +46,10 @@ export default function RootLayout({ children }) {
         className= {`${averia_sans_libre.variable} ${noto_sans.variable} antialiased`}
       >
       <Provider>
-        <Appbar />      
-        <ScrollToTop />
-        <main className="flex-grow"></main>
-        {children}
+        <NuevoAppbar />      
+      
+        <main className="flex-grow" >
+        {children}</main>
         <Footer />
         </Provider>
       </body>

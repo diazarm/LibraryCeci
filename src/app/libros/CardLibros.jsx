@@ -30,8 +30,8 @@ const CardLibros = (props) => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className='flex flex-col justify-center items-center  relative group cursor-pointer'
-            style={{ pointerEvents: 'auto' }}>
+            className='flex flex-col justify-center items-center  relative group '
+           >
 
 {/* Contenedor de la imagen */}
         <div className="relative w-full max-w-[200px] aspect-[2/3] overflow-hidden  rounded group-hover:shadow-lg">
@@ -54,15 +54,27 @@ const CardLibros = (props) => {
             </div>
           {/*opcional color contenedor texto> bg-gray-500/70*/}
 
-{/* Botón de acción */}
+{/* Botón de acción 
             <div className='group-hover:flex  gap-5 mt-5  group-hover:z-20 inset-0 items-end transition-all'>
-                
+             para hacer click--> style={{ pointerEvents: 'auto' }}   classname="cursor-pointer"
                
-            </div>
+            </div>*/}
       
 
 {/* Modal */}
-    <Button onClick={() => onOpen()} className="mt-4 text-base" style={{ fontFamily: "Averia Sans Libre" }}  >reseña</Button>
+    <Button 
+    onClick={(e) => {
+      e.stopPropagation(); // Evita que el click se propague a elementos padres
+       onOpen();
+    }} 
+            className="mt-4 text-base group" 
+            style={{ fontFamily: "Averia Sans Libre" }}>reseña
+            <span className="absolute right-2 top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity">
+    
+  </span>
+            
+            </Button>
+
         <Modal 
         backdrop="opaque"        
         classNames={{
@@ -81,7 +93,7 @@ const CardLibros = (props) => {
                         <p className="text-sm">{props.edit}</p>
                         </ModalHeader>
                         
-                        <ModalBody className='text-center max-h-[60vh] font-bold text-2xl text-blue-900' style={{ fontFamily: "Averia Sans Libre" }} >                        
+                        <ModalBody className='text-center max-h-[60vh] font-bold text-xl text-blue-900' style={{ fontFamily: "Averia Sans Libre" }} >                        
                           <p>{props.description}</p>
                         </ModalBody>
                         

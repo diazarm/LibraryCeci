@@ -37,7 +37,7 @@ const Footer = () => {
           <p className="text-zinc-400 text-sm text-center justify-center mt-10 items-center">
             &copy; {new Date().getFullYear()} sanchorecabarren.cl - Todos los derechos reservados.
           </p>
-          <p className="text-zinc-400 text-xs mt-2 text-center justify-center items-center">Desarrollado por Sancho</p>       
+          {/*<p className="text-zinc-400 text-xs mt-2 text-center justify-center items-center">Desarrollado por Sancho</p>  */}     
           
         
 

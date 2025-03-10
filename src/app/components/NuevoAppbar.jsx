@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 /*import Image from "next/image";*/
+import Link from "next/link";
 
 import {
   Navbar,
@@ -67,7 +68,7 @@ const handleNavigation = (path) => {
 
 
   return (
-    <Navbar onMenuOpenChange={setIsMenuOpen} className="bg-zinc-800" >
+    <Navbar onMenuOpenChange={setIsMenuOpen} className="bg-zinc-800 fixed top-0 left-0 " >
       <NavbarContent>
         <NavbarMenuToggle
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
@@ -76,13 +77,17 @@ const handleNavigation = (path) => {
           />
   {/* Logo en pantallas grandes */}
         <NavbarBrand className="flex sm:flex">
-        <img src="/logo.png" alt="Logo Sancho" className="h-12 w-auto" />       
+        <Link href="/"> 
+        <img src="/logo.png" alt="Logo Sancho" className="h-12 w-auto" />   
+        </Link>    
         </NavbarBrand>        
       </NavbarContent>
 
-  {/* Logo visible en móvil 
-  <NavbarBrand className="flex sm:hidden">
-  <img src="/logo-SR.png" alt="Logo Sancho" className="h-10 w-auto" />       
+   {/* Logo visible en móvil 
+  <NavbarBrand className="hidden">
+    <Link href="/">                     
+    <img src="/logo.png" alt="Logo Sancho" className="h-10 w-auto" />     
+  </Link>    
 </NavbarBrand>  */}
 
   {/* Menú principal */}
