@@ -63,7 +63,7 @@ const CardLibros = (props) => {
 
 {/* Modal */}
     <Button 
-    onClick={(e) => {
+    onPress={(e) => {
       e.stopPropagation(); // Evita que el click se propague a elementos padres
        onOpen();
     }} 

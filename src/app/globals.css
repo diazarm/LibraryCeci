@@ -8,14 +8,14 @@
   --foreground: #171717;
 }
 
-/*se elimina esto para que el modo oscuro sea fijo.
+/*se elimina esto para que el modo oscuro sea fijo.*/
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}*/
+    
+  }}
+
 
 
 body {
