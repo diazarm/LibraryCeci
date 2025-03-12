@@ -23,22 +23,28 @@ const FormContact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const response = await fetch("/api/sendEmail", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        nombre: nombre,
-        email: email,
-        mensaje: mensaje
-    }),
-  });
-  const data = await response.json();
+    try {
+      const response = await fetch("/api/sendEmail", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name: formData.nombre,  // Cambiado "nombre" a "name"
+          email: formData.email,
+          message: formData.mensaje, // Cambiado "mensaje" a "message"
+        }),
+      });
 
-    if (response.ok) {
-      alert("Mensaje enviado con éxito");
-      setFormData({ nombre: "", email: "", mensaje: "" });
-    } else {
-      alert(`Error: ${data.error}`);
+      const data = await response.json();
+
+      if (response.ok) {
+        alert("Mensaje enviado con éxito");
+        setFormData({ nombre: "", email: "", mensaje: "" });
+      } else {
+        alert(`Error: ${data.error}`);
+      }
+    } catch (error) {
+      alert("Error al enviar el mensaje. Inténtalo de nuevo.");
+      console.error("Error en la solicitud:", error);
     }
   };
 
@@ -60,7 +66,7 @@ const FormContact = () => {
           required />
 
         <Input
-          type="text"
+          type="email"
           label="Email"
           name="email"
           value={formData.email}

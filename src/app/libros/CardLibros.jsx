@@ -22,7 +22,7 @@ const CardLibros = (props) => {
 
   return (
     
-    <div id="libros-section" className="flex flex-wrap bg-zinc-800 rounded-xl  sm:grid-cols-3 md:grid-cols-4 gap-6 p-5  ">
+    <div id="libros-section" className="flex flex-wrap justify-center bg-zinc-800 rounded-xl  sm:grid-cols-3 md:grid-cols-4 gap-6 p-5  ">
          <motion.div
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
@@ -59,21 +59,14 @@ const CardLibros = (props) => {
              para hacer click--> style={{ pointerEvents: 'auto' }}   classname="cursor-pointer"
                
             </div>*/}
-      
+            </motion.div>
 
 {/* Modal */}
     <Button 
-    onPress={(e) => {
-      e.stopPropagation(); // Evita que el click se propague a elementos padres
-       onOpen();
-    }} 
-            className="mt-4 text-base group" 
-            style={{ fontFamily: "Averia Sans Libre" }}>reseña
-            <span className="absolute right-2 top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity">
-    
-  </span>
-            
-            </Button>
+        onPress={onOpen}
+         className="mt-4 text-base flex"
+        style={{ fontFamily: "Averia Sans Libre" }}>reseña           
+    </Button>
 
         <Modal 
         backdrop="opaque"        
@@ -122,7 +115,7 @@ const CardLibros = (props) => {
                 
         </ModalContent>
         </Modal>
-        </motion.div>
+        
     </div>
     
   );
