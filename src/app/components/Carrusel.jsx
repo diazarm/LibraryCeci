@@ -50,7 +50,7 @@ const PrevArrow = ({ onClick }) => (
 
 
     return (
-      <div className=" py-8 slider-container">   
+      <div className=" mt-20 slider-container">   
       <Popover className="  fixed inset-0 top-8 left-1/2 justify-center items-center transform -translate-x-1/2 z-50">
       
 

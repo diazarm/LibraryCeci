@@ -78,7 +78,7 @@ const CardLibros = (props) => {
         onOpenChange={onOpenChange}
         scrollBehavior="inside"
         >
-            <ModalContent className=' bg-blue-200 p-7 overflow-y-auto max-h-[90vh]'>
+            <ModalContent className=' bg-blue-200 p-7 overflow-y-auto max-h-[100vh]'>
                 {(onClose) => (
                     <div className="flex flex-col gap-1">
                         <ModalHeader className="flex flex-col gap-1 text-2xl font-bold text-center text-blue-900"
