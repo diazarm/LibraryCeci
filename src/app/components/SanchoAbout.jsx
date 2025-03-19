@@ -24,18 +24,17 @@ const SanchoAbout = () => {
   
 
 {/* Texto  */}
-        <div className="absolute inset-0 flex justify-center text-center pt-60 "
+        <div className="absolute inset-0 flex justify-center text-center pt-40 "
                   >
-          <h1  className= "text-zinc-800 text-center font-semibold text-7xl"
+          <h1  className= "text-zinc-800 text-center font-semibold text-[15vw] sm:text-[10vw] md:text-[8vw] lg:text-[7vw] break-words"
           style={{ fontFamily: "Averia Sans Libre" }}   >
             SANCHO RECABARREN
           </h1>          
         </div>
-        <div className="absolute inset-0 flex  justify-center text-center" 
-               >
+        <div className="flex-col flex  justify-center text-center">
           <HoverSancho   
             text={ 
-            <h2 className= "text-gray-800 text-center text-5xl font-bold pt-96"
+            <h2 className= "text-zinc-800 text-center hover text-5xl font-bold pt-96 break-words"
             style={{ fontFamily: "Averia Sans Libre" }} >
           
           

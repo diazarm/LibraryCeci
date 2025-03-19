@@ -19,15 +19,15 @@ const Andino = () => {
         />
         </div>
  
-    <div className="absolute inset-0 flex items-center "
+    <div className="absolute inset-0 flex items-center justify-start pl-10"
     >
-        <h6 className="text-emerald-800  p-5 font-medium text-6xl mb-72"
+        <h1 className="text-emerald-800  p-5 font-medium text-6xl mb-72"
             style={{ fontFamily: "Averia Sans Libre" }}>
             ... algo de Andino
-        </h6>          
+        </h1>          
     </div>
 
-    <div className="absolute inset-0 flex items-center justify-center mb-20" 
+    <div className="absolute inset-0 flex items-center justify-start mb-20 pl-10" 
             style={{ top: "40%" }}  >
         <motion.div
               whileHover={{ scale: 1.1 }}
@@ -36,18 +36,18 @@ const Andino = () => {
               initial="hidden"
               animate="show"
               exit="hidden"
-              className='flex flex-col justify-center items-center  relative group cursor-pointer'>
+              className='bg-emerald-400 bg-opacity-80 p-6  rounded-xl max-w-2xl w-full cursor-pointer'>
 
-            <div className="bg-emerald-400 bg-opacity-80 p-5 rounded-lg">     
+                
        
                 <Link href="/andino/sancho-andino">   
-                <p className="cursor-pointer hover text-emerald-800 text-3xl text-center font-medium px-5 sm:px-40"
+                <p className="cursor-pointer hover text-emerald-800 text-xl sm:text-2xl md:text-4xl font-medium px-4 sm:px-10 text-center"
                     style={{ fontFamily: "Averia Sans Libre" }}>
                     Haber vivido Talcahuano, Copiapó y Santiago, además de las andanzas por territorio nacional,
                     lo han convencido que Chile es un país absolutamente andino, y todos sus habitantes también lo son. Parte de su obra abarca este arraigo cultural a los cerros.
                 </p>
             </Link>  
-            </div>  
+            
         </motion.div> 
     </div>
 

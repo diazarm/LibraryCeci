@@ -7,7 +7,7 @@ import { motion } from 'framer-motion';
 import { fadeIn } from "../components/utils/motionTransitions"
 
 
-const Prueba = () => {
+const Poeta = () => {
   return (
     <div className="about-section bg-cover bg-center min-h-screen relative">
       <div className="-z-10"> 
@@ -21,15 +21,15 @@ const Prueba = () => {
         />
       </div>
        
-      <div className="absolute inset-0 flex items-center justify-end pr-28 ">
-          <h1 className=" text-sky-900 text-center font-medium text-6xl mb-72 m-10 transform -translate-y-20"
+      <div className="absolute inset-0 flex items-center justify-end pr-20">
+          <h1 className=" text-sky-900 text-end text-6xl font-medium  mb-60 "
               style={{ fontFamily: "Averia Sans Libre" }}>
                ... algo de Poeta
           </h1>
           
       </div>
      
-      <div className="absolute inset-0 flex items-center justify-end mb-20 " 
+      <div className="absolute inset-0 flex items-center justify-end mb-20 pr-10" 
               style={{ top: "40%" }}  >
             <motion.div
               whileHover={{ scale: 1.1 }}
@@ -38,12 +38,12 @@ const Prueba = () => {
               initial="hidden"
               animate="show"
               exit="hidden"
-              className='flex flex-col justify-center items-center  relative group cursor-pointer'>
+              className='bg-sky-300 bg-opacity-60 p-6 rounded-xl max-w-2xl w-full cursor-pointer'>
 
-            <div className="bg-sky-300 bg-opacity-60  p-6 rounded-xl max-w-2xl">
+           
                     {/*la última clase + el justify de arriba es para el ancho del fondo de la caja de texto*/}     
                 <Link href="/poeta/sancho-poeta">
-                    <p className= "cursor-pointer hover text-sky-900 text-3xl font-medium px-5 sm:px-40 text-center"
+                    <p className= "cursor-pointer hover text-sky-900 text-xl sm:text-2xl md:text-4xl font-medium px-4 sm:px-10 text-center"
                  style={{ fontFamily: "Averia Sans Libre" }}>
                 La poesía como arte de libertad en uso del lenguaje; Sancho la cultiva como tal 
                 o como base de sus textos, porque la cruza a veces con erudición, 
@@ -51,7 +51,7 @@ const Prueba = () => {
                 un poco de este arte.
               </p>
               </Link>
-            </div>
+            
           </motion.div>
       </div>
     </div>
@@ -59,7 +59,7 @@ const Prueba = () => {
   )
 }
 
-export default Prueba;
+export default Poeta;
 
 /*style={{ fontFamily: "Lucida Sans" }}*/
 /* <div className="absolute inset-0 flex justify-end items-end pb-15 pr-28">

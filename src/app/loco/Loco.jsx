@@ -12,27 +12,27 @@ const Loco = () => {
     <div className="about-section  bg-cover bg-center min-h-screen relative">
     
     {/* Fondo de imagen */}  
-      <div className="-z-10 object-cover  w-full h-full">  
+      <div className="-z-10">  
         <Image
-            className="absolute inset-0  flex flex-col "
+            className="mx-auto "
             src={locofondo}
             alt="Fondo de la sección loco"
-            fill// Ocupa todo el contenedor. layout="fill"
-       // Asegura que la imagen se adapte
+            layout="fill" // Ocupa todo el contenedor. layout="fill"
+            objectFit="cover"  // Asegura que la imagen se adapte
             quality={100} // Opcional: Ajusta la calidad
-            priority
+            
         />
         </div>
         
  {/* Título */}
-      <div className="absolute inset-0 flex items-center justify-start  ">
-        <h1  className="text-orange-600 p-8  font-medium text-6xl mb-72"
+      <div className="absolute inset-0 flex items-center justify-start pl-10">
+        <h1  className="text-orange-600 p-8 font-medium text-6xl mb-72"
              style={{ fontFamily: "Averia Sans Libre" }} >
             ... y algo de Loco
         </h1>          
       </div>
    {/* Texto descriptivo */}    
-      <div className="absolute inset-0 flex items-center mb-20 " 
+      <div className="absolute inset-0 flex  mb-20 pl-10" 
             style={{ top: "40%" }}  >
         <motion.div
           whileHover={{ scale: 1.1 }}
@@ -41,13 +41,12 @@ const Loco = () => {
           initial="hidden"
           animate="show"
           exit="hidden"
-          className='flex flex-col justify-center  relative group cursor-pointer'>
+          className='bg-orange-200 bg-opacity-60 flex flex-col justify-start  p-6 rounded-xl max-w-2xl w-full cursor-pointer'>
       
 
-      <div className=" bg-orange-200 bg-opacity-60 p-6 rounded-xl max-w-2xl"
-              style={{ top: "40%" }}>
+      
               <Link href="/loco/sancho-loco">
-            <p className= "cursor-pointer hover text-orange-600 text-3xl sm:px-20 sm:ml-0 sm:mr-0 "
+            <p className= "cursor-pointer hover text-orange-600 text-xl sm:text-2xl md:text-4xl font-medium px-4 sm:px-10"
             style={{ fontFamily: "Averia Sans Libre" }}> 
               Sancho es aficionado lector del género fantástico, particularmente
                de ciencia ficción, lo que lo ha llevado a hacer sus aportes 
@@ -55,7 +54,7 @@ const Loco = () => {
                produciendo esa locura para no volverse loco.
                </p> 
                </Link> 
-            </div>
+          
             </motion.div> 
            
       </div>

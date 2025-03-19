@@ -19,8 +19,8 @@ const Doctor = () => {
     />
     </div>
 
-      <div className="absolute inset-0 flex items-center justify-center">
-        <h1 className= "text-amber-400 text-center font-medium text-6xl mb-72"
+      <div className="absolute inset-0 flex items-center justify-center ">
+        <h1 className= "text-amber-400 text-center font-medium text-6xl mb-60"
             style={{ fontFamily: "Averia Sans Libre" }}>
             ... algo de Doctor
         </h1>          
@@ -35,10 +35,10 @@ const Doctor = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className='flex flex-col justify-center items-center  relative group cursor-pointer'>
+            className='flex flex-col justify-center items-center  relative cursor-pointer'>
             
           <Link href="/doctor/sancho-doctor">  
-            <p className=" text-amber-400 text-3xl font-medium px-5 sm:px-40 text-center"
+            <p className=" text-amber-400 cursor-pointer hover text-xl sm:text-2xl md:text-4xl font-medium px-4 sm:px-10 text-center"
                style={{ fontFamily: "Averia Sans Libre" }}>
               Sancho divulga saberes con la erudición que le da su doctorado en ciencias y 
               su experiencia generando conocimientos en las áreas que se ha desempeñado como 
