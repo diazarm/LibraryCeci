@@ -9,7 +9,7 @@ import { fadeIn } from "../components/utils/motionTransitions"
 
 const Loco = () => {
   return (
-    <div className=" bg-cover bg-center min-h-screen relative"> 
+    <div className="about-section bg-cover bg-center min-h-screen relative "> 
     
     {/* Fondo de imagen */}  
       <div className="-z-10 ">  
@@ -33,7 +33,7 @@ const Loco = () => {
       </div>
 
    {/* contenedor Texto descriptivo */}    
-      <div className="absolute inset-0 justify-start  mb-20 pl-2" 
+      <div className="absolute justify-start  mb-20 pl-2" 
             style={{ top: "45%" }}  >
         <motion.div
           whileHover={{ scale: 1.1 }}
@@ -46,7 +46,7 @@ const Loco = () => {
           >
       
           <Link href="/loco/sancho-loco">
-            <p className= "gap-6 cursor-pointer hover text-orange-600 text-lg sm:text-2xl md:text-4xl font-medium px-4 sm:px-10"
+            <p className= " cursor-pointer hover text-orange-600 text-lg sm:text-2xl md:text-4xl font-medium px-4 sm:px-10"
             style={{ fontFamily: "Averia Sans Libre" }}> 
               Sancho es aficionado lector del género fantástico, particularmente
                de ciencia ficción, lo que lo ha llevado a hacer sus aportes 

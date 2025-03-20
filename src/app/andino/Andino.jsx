@@ -18,7 +18,8 @@ const Andino = () => {
             quality={100} // Opcional: Ajusta la calidad
         />
         </div>
- 
+
+  {/*  contenedor Título  */}
     <div className="absolute inset-0 flex items-center justify-start pl-10"
     >
         <h1 className="text-emerald-800  p-5 font-medium text-6xl mb-72"
@@ -27,6 +28,7 @@ const Andino = () => {
         </h1>          
     </div>
 
+     {/* contenedor Texto descriptivo */} 
     <div className="absolute inset-0 flex items-center justify-start mb-20 pl-2" 
             style={{ top: "40%" }}  >
         <motion.div

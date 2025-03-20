@@ -11,11 +11,11 @@ import {Input} from "@heroui/input"*/
 
 const Footer = () => {
     return (
-      <footer className="bg-zinc-800 text-zinc-200 py-6">
+      <footer className="bg-zinc-800 text-zinc-200 py-20">
       <div className="container mx-auto text-center px-4">
 
 {/* 🔹 Redes Sociales */}
-    <div className="flex justify-center space-x-10 mt-8 mb-4">
+    <div className="flex justify-center space-x-10 mt-0 mb-4">
           <a href="https://www.facebook.com/SanchoRecabarren/" target="_blank" rel="noopener noreferrer">
             <FaFacebook className="w-8 h-8 hover:text-blue-500 transition-colors" />
           </a>

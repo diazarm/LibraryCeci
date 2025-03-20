@@ -34,18 +34,9 @@ const SanchoAbout = () => {
         
         <div className=" flex  justify-center text-center">
         <HoverSancho   
-        text={ 
-        <h2  className="text-zinc-800 text-center font-semibold break-words"
-        style={{ fontFamily: "Averia Sans Libre" }} >
-      
-      
-        un escritor que es ...
-        </h2>
-}          
-        
-      
+          text="un escritor que es ..."  
                     
-            info="Sancho Alexei Recabarren V. es el pseudónimo completo del escritor
+          info="Sancho Alexei Recabarren V. es el pseudónimo completo del escritor
           nacido en Concepción, pero que vivió unos 9 años Talcahuano, otro tanto 
           Copiapó, y que se radicó en Santiago de Chile para estudiar. Sancho escribe
           literatura como una necesidad, modo de expresión artística con la pluma 

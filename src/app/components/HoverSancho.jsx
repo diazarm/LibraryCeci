@@ -12,10 +12,10 @@ export default function HoverSancho({ text, info }) {
     onTouchStart={() => setIsHovered(!isHovered)} // Permite interacción táctil
   >
   <h2
-  className="text-zinc-800 text-5xl font-bold pt-96 break-words"
+  className="text-zinc-800 text-5xl font-semibold pt-96 break-words cursor-pointer"
   style={{ fontFamily: "Averia Sans Libre" }}
 >
-  {text}
+  <span>{text}</span>
 </h2>
       
       {isHovered && (
@@ -24,9 +24,8 @@ export default function HoverSancho({ text, info }) {
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: 10 }}
           transition={{ duration: 0.2 }}
-          className='absolute left-0 mt-2 bg-zinc-800 p-10 shadow-lg rounded-xl border-spacing-5 z-10 ${
-    isHovered ? "opacity-100" : "opacity-0"
-  } transition-opacity duration-300`}'
+          className="absolute left-0 mt-2 bg-zinc-800 p-10 shadow-lg rounded-xl border-spacing-5 z-10"
+    
           style={{ fontFamily: "Noto Sans" }} 
           >
           {info}

@@ -21,8 +21,8 @@ const Poeta = () => {
         />
       </div>
        
-      <div className="absolute inset-0 flex items-center justify-end gap-20 pr-5">
-          <h1 className=" text-sky-900 text-end text-6xl font-medium  mb-60 "
+      <div className="absolute inset-0 flex items-center justify-end gap-6 pr-5">
+          <h1 className=" text-sky-900 text-end text-6xl font-medium  mb-72 "
               style={{ fontFamily: "Averia Sans Libre" }}>
                ... algo de Poeta
           </h1>
