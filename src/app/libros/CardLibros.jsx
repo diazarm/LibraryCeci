@@ -103,11 +103,11 @@ const CardLibros = (props) => {
                           </Link>
                           )}
                           {props.showEditorialButton !== false && (
-                          <Link href={props.urlDespliegue}
+                          <a href={props.urlDespliegue}
                           target="_blank"
                           rel="noopener noreferrer" >
                               <Button color='primary' variant="flat" style={{ fontFamily: "Averia Sans Libre" }} >Editorial</Button>
-                          </Link>
+                          </a>
                           )}
                         </ModalFooter>
                     </div>
