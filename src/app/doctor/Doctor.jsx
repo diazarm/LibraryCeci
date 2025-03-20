@@ -38,7 +38,7 @@ const Doctor = () => {
             className='p-6 rounded-xl max-w-2xl w-full cursor-pointer'>
             
           <Link href="/doctor/sancho-doctor">  
-            <p className=" text-amber-400 cursor-pointer hover text-xl sm:text-2xl md:text-4xl font-medium px-4 sm:px-10 text-center"
+            <p className="gap-6 text-amber-400 cursor-pointer hover text-xl sm:text-2xl md:text-4xl font-medium px-4 sm:px-10 text-center"
                style={{ fontFamily: "Averia Sans Libre" }}>
               Sancho divulga saberes con la erudición que le da su doctorado en ciencias y 
               su experiencia generando conocimientos en las áreas que se ha desempeñado como 
