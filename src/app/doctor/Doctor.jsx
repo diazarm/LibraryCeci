@@ -26,7 +26,7 @@ const Doctor = () => {
         </h1>          
     </div>
 
-    <div className="absolute inset-0 flex items-center justify-center mb-20" 
+    <div className="absolute inset-0 flex items-center justify-center mb-20 " 
             style={{ top: "40%" }}  >
           <motion.div
             whileHover={{ scale: 1.1 }}
@@ -35,7 +35,7 @@ const Doctor = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className='flex flex-col justify-center items-center  relative cursor-pointer'>
+            className='p-6 rounded-xl max-w-2xl w-full cursor-pointer'>
             
           <Link href="/doctor/sancho-doctor">  
             <p className=" text-amber-400 cursor-pointer hover text-xl sm:text-2xl md:text-4xl font-medium px-4 sm:px-10 text-center"

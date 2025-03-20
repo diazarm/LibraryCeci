@@ -21,7 +21,7 @@ const Poeta = () => {
         />
       </div>
        
-      <div className="absolute inset-0 flex items-center justify-end pr-20">
+      <div className="absolute inset-0 flex items-center justify-end gap-20 pr-5">
           <h1 className=" text-sky-900 text-end text-6xl font-medium  mb-60 "
               style={{ fontFamily: "Averia Sans Libre" }}>
                ... algo de Poeta
@@ -29,7 +29,7 @@ const Poeta = () => {
           
       </div>
      
-      <div className="absolute inset-0 flex items-center justify-end mb-20 pr-10" 
+      <div className="absolute inset-0 flex items-center justify-end mb-20 pr-5" 
               style={{ top: "40%" }}  >
             <motion.div
               whileHover={{ scale: 1.1 }}

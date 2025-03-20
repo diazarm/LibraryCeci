@@ -31,7 +31,7 @@ const SanchoAbout = () => {
             SANCHO RECABARREN
           </h1>          
         </div>
-        <div className="flex-col flex  justify-center text-center">
+        <div className=" flex  justify-center text-center">
           <HoverSancho   
             text={ 
             <h2 className= "text-zinc-800 text-center hover text-5xl font-bold pt-96 break-words"

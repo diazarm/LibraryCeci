@@ -55,12 +55,12 @@ const PrevArrow = ({ onClick }) => (
       
 
       {isPopoverOpen && (
-      <PopoverContent className="w-[400px] h-auto py-6 bg-teal-600 rounded-lg">
+      <PopoverContent className="w-[300px] h-auto py-6 bg-teal-600 rounded-lg">
         <div className="flex flex-col items-center">
         <img
         src="/reclus.png"
         alt="Popover Image"
-        className="w-full  h-auto  object-cover rounded-lg py-1 " //max-h-[300px] regula el ancho del afiche
+        className=" max-h-[80vh] sm:max-h-[70vh] md:max-h-[60vh] lg:max-h-[50vh] object-cover rounded-lg py-1 " //max-h-[300px] regula el ancho del afiche
         onError={() => console.error("No se pudo cargar la imagen")}
       />
           <div className="text-xl font-bold mt-4">¡¡PRÓXIMAMENTE!!</div>
