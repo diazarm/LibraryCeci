@@ -20,7 +20,7 @@ const Doctor = () => {
     </div>
 
       <div className="absolute inset-0 flex items-center justify-center ">
-        <h1 className= "text-amber-400 text-center font-medium text-6xl mb-60"
+        <h1 className= "text-amber-400 p-5 text-center font-medium text-6xl mb-80"
             style={{ fontFamily: "Averia Sans Libre" }}>
             ... algo de Doctor
         </h1>          
