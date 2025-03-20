@@ -86,7 +86,7 @@ const CardLibros = (props) => {
                         <p className="text-sm">{props.edit}</p>
                         </ModalHeader>
                         
-                        <ModalBody className='text-center max-h-[60vh] font-bold text-xl text-blue-900' style={{ fontFamily: "Averia Sans Libre" }} >                        
+                        <ModalBody className='text-center max-h-[60vh] font-bold text-lg text-blue-900' style={{ fontFamily: "Averia Sans Libre" }} >                        
                           <p>{props.description}</p>
                         </ModalBody>
                         
@@ -96,18 +96,21 @@ const CardLibros = (props) => {
                           </Button>
 
                           {props.title === "Todavía de a pie (por Chile, sus Andes)" && (
-                          <Link href="/contact">
-                          <Button color="primary" variant="bordered"  onPress={onClose}>
-                            Quiero 1 libro
+                         
+                          <Button as={Link} href="/contact" color="primary" variant="bordered"  onPress={onClose}>
+                            Comprar al autor
                           </Button>
-                          </Link>
+                          
                           )}
                           {props.showEditorialButton !== false && (
-                          <a href={props.urlDespliegue}
-                          target="_blank"
-                          rel="noopener noreferrer" >
-                              <Button color='primary' variant="flat" style={{ fontFamily: "Averia Sans Libre" }} >Editorial</Button>
-                          </a>
+                       
+                              <Button 
+                              color='primary' 
+                              variant="flat" 
+                              style={{ fontFamily: "Averia Sans Libre" }}
+                              onPress={() => window.open(props.urlDespliegue, "_blank", "noopener noreferrer")}
+                              >Editorial</Button>
+                      
                           )}
                         </ModalFooter>
                     </div>
