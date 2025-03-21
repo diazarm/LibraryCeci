@@ -54,7 +54,7 @@ const FormContact = () => {
 
       <form className='flex flex-col justify-center items-center rounded-xl gap-5 py-10 '
             onSubmit={handleSubmit}>
-        <h1 className="text-lg break-words text-center justify-center py-6 text-zinc-200">Si quieres consultar sobre algo en particular, envíame un mensaje.</h1>
+        <h1 className="text-base break-words text-center justify-center py-6 text-zinc-200">Si quieres consultar sobre algo en particular, envíame un mensaje.</h1>
         <Input
           type="text"
           label="Nombre"
