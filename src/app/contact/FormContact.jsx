@@ -52,9 +52,9 @@ const FormContact = () => {
     
     <div className="bg-zinc-800 rounded-2xl text-zinc-200 w-full sm:w-3/4 xl:w-3/4" >     
 
-      <form className='flex flex-col justify-center items-center rounded-xl gap-5 py-20 '
+      <form className='flex flex-col justify-center items-center rounded-xl gap-5 py-10 '
             onSubmit={handleSubmit}>
-        <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl   text-zinc-200">Si quieres consultar sobre algo en particular, envíame un mensaje.</h1>
+        <h1 className="text-lg break-words text-center justify-center py-6 text-zinc-200">Si quieres consultar sobre algo en particular, envíame un mensaje.</h1>
         <Input
           type="text"
           label="Nombre"
