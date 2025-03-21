@@ -54,7 +54,7 @@ const FormContact = () => {
 
       <form className='flex flex-col justify-center items-center rounded-xl gap-5 py-20 '
             onSubmit={handleSubmit}>
-        <h1 className="text-2xl text-zinc-200">Escribeme</h1>
+        <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl   text-zinc-200">Si quieres consultar sobre algo en particular, envíame un mensaje.</h1>
         <Input
           type="text"
           label="Nombre"

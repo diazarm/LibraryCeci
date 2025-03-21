@@ -114,7 +114,7 @@ const handleNavigation = (path) => {
                   onPress={() => handleNavigation("/contact")} 
                   variant="bordered"
                   className="text-zinc-200" >
-            Escríbeme
+            Contacto
           </Button>
         </NavbarItem>
       </NavbarContent>

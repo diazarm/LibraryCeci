@@ -92,12 +92,13 @@ const Poeta = () => {
 {/* Listado de obras */}
       <div className="grid grid-cols-1 mb-16  sm:grid-cols-2 lg:grid-cols-3 gap-6"> 
       {works.map((work, index) => (
-        <Card key={index} className="py-4 bg-sky-300" >
+        <Card key={index} className=" bg-sky-300" >
+
           <CardHeader className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-sky-900" 
                       style={{ fontFamily: "Averia Sans Libre" }} >
               <div>
                       {work.title}
-                <p className="text-base sm:text-lg md:text-xl font-normal text-sky-900">{work.type}</p>
+                <p className="text-base sm:text-lg md:text-xl font-semibold text-sky-900">{work.type}</p>
               </div>
           </CardHeader>
 

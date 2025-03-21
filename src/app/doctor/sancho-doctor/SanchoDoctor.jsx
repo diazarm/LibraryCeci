@@ -37,14 +37,14 @@ const SanchoDoctor = () => {
   ];
 
   return (
-    <div className="p-6 pt-20 pb-16 flex  flex-col gap-6 bg-zinc-800">
+    <main className="min-h-screen p-6 pt-20 pb-16 flex  flex-col gap-6 bg-zinc-800">
       {/* Contenedor principal */}
       
       <div className="relative text-center p-6 rounded-xl ">     
-            <h1 className= "text-5xl font-medium items-center text-center text-amber-200 -mt-4 pt-6"
+            <h1 className= "text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-medium items-center text-center text-amber-200 -mt-4 pt-6"
                 style={{ fontFamily: "Averia Sans Libre" }} >Algo de Doctor</h1>
        
-          <p className="mt-8 text-3xl text-center text-amber-200 mb-10"
+          <p className="mt-8 text-lg sm:text-xl md:text-2xl lg:text-3xl text-center text-amber-200 mb-10"
             style={{ fontFamily: "Averia Sans Libre" }}  >
             Aunque su grado académico es doctor en ciencias con mención en 
             geología, que es una ciencia natural, sus estudios se salen de 
@@ -60,30 +60,31 @@ const SanchoDoctor = () => {
              
       </div><br/>
       <div>
-        <h1 className= "text-4xl font-medium items-center text-center text-amber-200 -mt-4 pt-5"
+        <h1 className= "text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium items-center text-center text-amber-200 -mt-4 pt-5"
             style={{ fontFamily: "Averia Sans Libre" }} >Títulos Relacionados</h1>
       </div> <br/>
       {/* Listado de obras */}
     <div className="grid grid-cols-1 mb-16  sm:grid-cols-2 lg:grid-cols-3 gap-6">
       {works.map((work, index) => (
-        <Card key={index} className="py-4 bg-amber-200" >
-            <CardHeader className="text-2xl font-bold text-amber-800 "
+        <Card key={index} className=" bg-amber-200" >
+        
+            <CardHeader className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-amber-800 "
                       style={{ fontFamily: "Averia Sans Libre" }} >
                 <div> {work.title}
-                  <p className="text-lg text-amber-800 font-normal">{work.type}</p>
+                  <p className="text-base sm:text-lg md:text-xl text-amber-800 font-semibold">{work.type}</p>
                 </div>
             </CardHeader>   
             
-           <CardBody className="text-lg  font-bold text-amber-800" 
+           <CardBody className="text-base sm:text-lg md:text-xl font-bold text-amber-800" 
                                style={{ fontFamily: "Averia Sans Libre" }}> 
-            <p className="text-sm ">{work.publisher}</p>  
+            <p className="font-normal text-xs sm:text-sm md:text-base ">{work.publisher}</p>  
            
             {work.link && (
               <a
                 href={work.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className=" text-amber-800 text-center"
+                className=" text-amber-800 text-center text-sm sm:text-base md:text-lg"
               >
                 <br/>ver
               </a>
@@ -96,7 +97,7 @@ const SanchoDoctor = () => {
         </Card>
       ))}
     </div>
-    </div>
+    </main>
   );
 };
 

@@ -50,17 +50,17 @@ const PrevArrow = ({ onClick }) => (
 
 
     return (
-      <div className=" mt-20 slider-container">   
-      <Popover className="  fixed inset-0 top-8 left-1/2 justify-center items-center transform -translate-x-1/2 z-50">
+      <div className=" mt-20 w-full max-w-full ">   
+      <Popover className="  fixed inset-10 top-8  justify-center items-center transform -translate-x-1/2 z-50">
       
 
       {isPopoverOpen && (
-      <PopoverContent className="w-[300px] h-auto py-6 bg-teal-600 rounded-lg">
+      <PopoverContent className="w-[300px] h-auto py-4 bg-teal-600 rounded-lg">
         <div className="flex flex-col items-center">
         <img
         src="/reclus.png"
         alt="Popover Image"
-        className=" max-h-[80vh] sm:max-h-[70vh] md:max-h-[60vh] lg:max-h-[50vh] object-cover rounded-lg py-1 " //max-h-[300px] regula el ancho del afiche
+        className=" max-h-[90vh] sm:max-h-[70vh] md:max-h-[60vh] lg:max-h-[50vh] object-cover rounded-lg py-1 " //max-h-[300px] regula el ancho del afiche
         onError={() => console.error("No se pudo cargar la imagen")}
       />
           <div className="text-xl font-bold mt-4">¡¡PRÓXIMAMENTE!!</div>
@@ -77,17 +77,17 @@ const PrevArrow = ({ onClick }) => (
 
     
       <Slider {...settings}>
-        <div style={{ maxWidth: "500px", maxHeight: "300px", margin: "auto" }} >
+        <div className="w-full flex justify-center items-center" >
         <img 
         src= "/slider-banner-historia.png" 
         alt="Image 1" 
-        style={{ width: "100%", height: "auto", objectFit: "contain" }} />
+        className="w-full h-full max-h-[600px] object-contain"/>
         </div>
-        <div style={{ maxWidth: "500px", maxHeight: "300px", margin: "auto" }} >
+        <div className="w-full flex justify-center items-center">
         <img 
         src="/slider-banner-todavia.png" 
         alt="Image 2" 
-        style={{ width: "100%", height: "auto", objectFit: "contain"  }} />
+        className="w-full h-full max-h-[600px]  object-contain" />
         </div>        
       </Slider>
      </div> 
