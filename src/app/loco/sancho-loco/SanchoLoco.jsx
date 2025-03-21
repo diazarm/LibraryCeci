@@ -35,11 +35,11 @@ const Loco = () => {
     ];
 
     return (
-        <div className="p-6 pt-4 pb-16 flex  flex-col gap-10 bg-orange-600" > 
+        <div className="p-6 pt-20 pb-16 flex  flex-col gap-10 bg-orange-600" > 
          <div className="relative text-center p-6 rounded-xl">     
-                 <h1 className="text-5xl font-medium item-center text-center text-orange-200  -mt-4 pt-5"
+                 <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl  font-medium item-center text-center text-orange-200  -mt-4 pt-5"
                       style={{ fontFamily: "Averia Sans Libre" }}>y algo de Loco</h1><br/>
-                 <p className="mt-4 text-3xl text-center text-orange-200  mb-10 "
+                 <p className="mt-4 text-lg sm:text-xl md:text-2xl lg:text-3xl text-center text-orange-200  mb-10 "
                     style={{ fontFamily: "Averia Sans Libre" }} >
                  Sin contar la mezcla de géneros que resultan sus textos, 
                  lo disparatado se puede ver en su narrativa de ficción, 
@@ -50,7 +50,7 @@ const Loco = () => {
            </div>
 
            <div>
-             <h1 className="relative text-4xl font-medium text-center items-center text-orange-200 -mt-4 pt-5"
+             <h1 className="relative text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium text-center items-center text-orange-200 -mt-4 pt-5"
                  style={{ fontFamily: "Averia Sans Libre" }} >Títulos Relacionados</h1>
            </div> 
   {/* Listado de obras */} 
@@ -58,7 +58,7 @@ const Loco = () => {
              {works.map((work, index) => (
                <Card key={index} className='bg-orange-200 py-4 '>
                      
-                 <CardHeader className="text-2xl  font-bold text-orange-800" 
+                 <CardHeader className="text-xl sm:text-2xl md:text-3xl lg:text-4xl  font-bold text-orange-800" 
                  style={{ fontFamily: "Averia Sans Libre" }} >
                  <div>
                     {work.title}

@@ -67,15 +67,15 @@ const Poeta = () => {
   ];
 
   return (
-    <main className=" min-h-screen  p-6 pt-4 pb-16 flex  flex-col gap-6 bg-sky-800">
+    <main className=" min-h-screen p-6 pt-20 pb-16 flex  flex-col gap-6 bg-sky-800">
       
     {/* Contenedor principal */}  
       <div className="relative text-center p-6 rounded-xl ">
 
-      <h1 className= "text-5xl  font-medium item-center text-center text-sky-200 -mt-4 pt-5"
+      <h1 className= "text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-medium item-center text-center text-sky-200 -mt-4 pt-5"
           style={{ fontFamily: "Averia Sans Libre" }}>Algo de Poeta</h1><br/>
           
-          <p className="mt-4 text-3xl item-center text-center text-sky-200 mb-10"
+          <p className="mt-4 text-lg sm:text-xl md:text-2xl lg:text-3xl item-center text-center text-sky-200 mb-10"
              style={{ fontFamily: "Averia Sans Libre" }}>
             Sancho comenzó publicando poemas contingentes durante el primer año
             de confinamiento. Antes de eso, reescribió en verso "Histoire d'un
@@ -86,31 +86,31 @@ const Poeta = () => {
       </div>
           
       <div>
-            <h1 className=" relative text-4xl font-medium items-center text-center text-sky-200 -mt-4 pt-5"
+            <h1 className=" relative text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium items-center text-center text-sky-200 -mt-4 pt-5"
                 style={{ fontFamily: "Averia Sans Libre" }}>Títulos Relacionados</h1>
       </div> <br/>
 {/* Listado de obras */}
       <div className="grid grid-cols-1 mb-16  sm:grid-cols-2 lg:grid-cols-3 gap-6"> 
       {works.map((work, index) => (
         <Card key={index} className="py-4 bg-sky-300" >
-          <CardHeader className="text-2xl  font-bold text-sky-900" 
+          <CardHeader className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-sky-900" 
                       style={{ fontFamily: "Averia Sans Libre" }} >
               <div>
                       {work.title}
-                <p className="text-lg font-normal text-sky-900">{work.type}</p>
+                <p className="text-base sm:text-lg md:text-xl font-normal text-sky-900">{work.type}</p>
               </div>
           </CardHeader>
 
-          <CardBody className="text-lg  font-bold text-sky-900" 
+          <CardBody className="text-base sm:text-lg md:text-xl font-bold text-sky-900" 
                     style={{ fontFamily: "Averia Sans Libre" }}>       
-            <p className="text-sm">{work.publisher}</p>
+            <p className="text-xs sm:text-sm md:text-base">{work.publisher}</p>
             
             {work.link && (
               <a
                 href={work.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-sky-900 text-center "
+                className="text-sky-900 text-center text-sm sm:text-base md:text-lg"
               >
               <br/>  ver 
               </a>

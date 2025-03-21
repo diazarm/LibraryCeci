@@ -38,7 +38,7 @@ const Andino = () => {
 
 
   return (
-   <div className="p-6 pt-4 pb-16 flex  flex-col gap-6 bg-emerald-600" > 
+   <div className="p-6 pt-20 pb-16 flex  flex-col gap-6 bg-emerald-600" > 
     
    <div className="relative text-center p-6 rounded-xl">     
             <h1 className="text-5xl font-medium items-center text-center text-emerald-200 -mt-4 pt-6"

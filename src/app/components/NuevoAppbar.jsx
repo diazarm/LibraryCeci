@@ -122,10 +122,10 @@ const handleNavigation = (path) => {
   {/* Menú Vertical (Móvil) */}
       <NavbarMenu className={`${isMenuOpen ? "block" : "hidden"}`}  >
         {menuItems.map((item, index) => (
-          <NavbarMenuItem key={index} className="py-1 bg-gray-200 "> 
+          <NavbarMenuItem key={index} className="py-1 bg-gray-200 text-left"> 
           <Button
           variant="light"
-          className="text-left "
+          className="text-left justify-start"
           color={index === 0 ? "primary" : index === menuItems.length - 1 ? "danger" : "foreground"}
           onPress={() => handleNavigation(item.path)}
           >

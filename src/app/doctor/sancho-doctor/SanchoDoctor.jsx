@@ -8,7 +8,7 @@ import {
    
 } from "@heroui/react";
 
-const CajaDoctor = () => {
+const SanchoDoctor = () => {
   const works = [
     {
       title: 'Canto VI: Los peligros geológicos',
@@ -37,7 +37,7 @@ const CajaDoctor = () => {
   ];
 
   return (
-    <div className="p-6 pt-4 pb-16 flex  flex-col gap-6 bg-zinc-800">
+    <div className="p-6 pt-20 pb-16 flex  flex-col gap-6 bg-zinc-800">
       {/* Contenedor principal */}
       
       <div className="relative text-center p-6 rounded-xl ">     
@@ -100,5 +100,5 @@ const CajaDoctor = () => {
   );
 };
 
-export default CajaDoctor;
+export default SanchoDoctor;
 

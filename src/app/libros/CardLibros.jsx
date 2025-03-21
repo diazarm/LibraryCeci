@@ -86,7 +86,8 @@ const CardLibros = (props) => {
                         <p className="text-sm">{props.edit}</p>
                         </ModalHeader>
                         
-                        <ModalBody className='text-center max-h-[60vh] font-bold text-lg text-blue-900' style={{ fontFamily: "Averia Sans Libre" }} >                        
+                        <ModalBody className='text-center max-h-[60vh] font-bold text-base sm:text-base md:text-lg lg:text-xl xl:text-2xl  text-blue-900' 
+                                  style={{ fontFamily: "Averia Sans Libre" }} >                        
                           <p>{props.description}</p>
                         </ModalBody>
                         

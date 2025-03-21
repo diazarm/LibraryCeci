@@ -11,7 +11,7 @@ import {Input} from "@heroui/input"*/
 
 const Footer = () => {
     return (
-      <footer className="bg-zinc-800 text-zinc-200 py-20">
+      <footer className="bg-zinc-800 text-zinc-200 py-8">
       <div className="container mx-auto text-center px-4">
 
 {/* 🔹 Redes Sociales */}
