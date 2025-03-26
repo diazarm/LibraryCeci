@@ -43,7 +43,7 @@ const Andino = () => {
                 
        
                 <Link href="/andino/sancho-andino">   
-                <p className="cursor-pointer hover text-emerald-800 text-lg sm:text-2xl md:text-4xl font-medium px-4 sm:px-10 text-center"
+                <p className="cursor-pointer hover text-emerald-800 text-xl sm:text-2xl md:text-4xl font-medium px-4 sm:px-10 text-center"
                     style={{ fontFamily: "Averia Sans Libre" }}>
                     Haber vivido Talcahuano, Copiapó y Santiago, además de las andanzas por territorio nacional,
                     lo han convencido que Chile es un país absolutamente andino, y todos sus habitantes también lo son. Parte de su obra abarca este arraigo cultural a los cerros.

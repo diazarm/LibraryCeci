@@ -46,7 +46,7 @@ const Loco = () => {
           >
       
           <Link href="/loco/sancho-loco">
-            <p className= " cursor-pointer hover text-orange-600 text-lg sm:text-2xl md:text-4xl font-medium px-4 sm:px-10"
+            <p className= " cursor-pointer hover text-orange-600 text-xl sm:text-2xl md:text-4xl font-medium px-4 sm:px-10"
             style={{ fontFamily: "Averia Sans Libre" }}> 
               Sancho es aficionado lector del género fantástico, particularmente
                de ciencia ficción, lo que lo ha llevado a hacer sus aportes 
