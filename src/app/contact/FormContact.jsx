@@ -100,7 +100,3 @@ const FormContact = () => {
 
 export default FormContact;
 
-/*EMAIL_USER=escritor@sanchorecabarren.cl
-EMAIL_PASS=sancho.alexei
-SMTP_HOST=smtp.tu-proveedor.com
-SMTP_PORT=465*/
