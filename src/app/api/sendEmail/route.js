@@ -2,24 +2,32 @@ import nodemailer from "nodemailer";
 
 export async function POST(req) {
     try {
-    const { name, email, message } = await req.json();
-    console.log("Datos recibidos:", name, email, message);
+        const { name, email, message } = await req.json();
+        console.log("Datos recibidos:", name, email, message);
 
-    if (!name || !email || !message) {
-        return new Response(JSON.stringify({ error: "Todos los campos son obligatorios." }), {
-            status: 400,
-            headers: { "Content-Type": "application/json" },
-        });
-    }
+        if (!name || !email || !message) {
+            return new Response(JSON.stringify({ error: "Todos los campos son obligatorios." }), {
+                status: 400,
+                headers: { "Content-Type": "application/json" },
+            });
+        }
 
-   
+        // Verificar que las variables de entorno están disponibles
+        if (!process.env.SMTP_HOST || !process.env.SMTP_PORT || !process.env.SMTP_USER || !process.env.SMTP_PASS) {
+            console.error("Error: Faltan variables de entorno en .env.local");
+            return new Response(JSON.stringify({ error: "Error en configuración del servidor." }), {
+                status: 500,
+                headers: { "Content-Type": "application/json" },
+            });
+        }
+
         const transporter = nodemailer.createTransport({
             host: process.env.SMTP_HOST, 
-            port: process.env.SMTP_PORT, 
-            secure: true, //solo funciona con el puerto 465
+            port: Number(process.env.SMTP_PORT), // Convertir a número
+            secure: true, // Solo funciona con el puerto 465
             auth: {
-                user: process.env.EMAIL_USER,
-                pass: process.env.EMAIL_PASS,
+                user: process.env.SMTP_USER,
+                pass: process.env.SMTP_PASS,
             },
         });
 
