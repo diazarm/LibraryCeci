@@ -1,36 +1,59 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# ✍️ Sancho Recabarren - Sitio Web Oficial
 
-## Getting Started
+Bienvenido al sitio web oficial de **Sancho Recabarren**, un espacio dedicado a la literatura, el arte y la creatividad. Aquí podrás conocer más sobre su trabajo, explorar sus escritos y ponerte en contacto con él.
 
-First, run the development server:
+## 🔍 Sobre el Proyecto
+Este proyecto ha sido desarrollado con **Next.js**, proporcionando una experiencia rápida y accesible para los visitantes.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### 🌟 Características principales:
+- **Diseño Responsivo**: Adaptado para todo tipo de dispositivos.
+- **Formulario de Contacto**: Para que puedas enviar consultas o comentarios directamente al autor.
+- **Optimización SEO**: Para mejorar la visibilidad en motores de búsqueda.
+- **Despliegue Estático**: Configurado con `next export` para facilitar su hosting en cualquier servidor estático.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🛠️ Tecnologías Utilizadas
+- **Next.js** (con salida estática)
+- **React**
+- **Tailwind CSS**
+- **NextUI & HeroUI** para componentes accesibles y estilizados
+- **Nodemailer** para la gestión del formulario de contacto
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## 🛠 Configuración y Ejecución
+Si deseas ejecutar el proyecto localmente, sigue estos pasos:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. Clona este repositorio:
+   ```bash
+   git clone https://github.com/usuario/nombre-repo.git
+   cd nombre-repo
+   ```
 
-## Learn More
+2. Instala las dependencias:
+   ```bash
+   npm install
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+3. Crea un archivo **.env.local** y configura las credenciales de correo:
+   ```env
+   SMTP_HOST=smtp.ejemplo.com
+   SMTP_PORT=465
+   EMAIL_USER=tu_email@example.com
+   EMAIL_PASS=tu_contraseña
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+4. Ejecuta el entorno de desarrollo:
+   ```bash
+   npm run dev
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+5. Para generar los archivos estáticos:
+   ```bash
+   npm run build && npm run export
+   ```
 
-## Deploy on Vercel
+## 💬 Contacto
+Si tienes preguntas o deseas ponerte en contacto con el autor, puedes visitar la página y llenar el formulario de contacto o escribir directamente a **escritor@sanchorecabarren.cl**.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Gracias por visitar este proyecto. ¡Esperamos que disfrutes de la experiencia! 🎨📚
+
